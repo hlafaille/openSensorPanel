@@ -1,17 +1,11 @@
 import os
-import webbrowser
-from datetime import datetime
 
-import psutil
-import speedtest
-from elevate import elevate
 from flask import Flask, render_template
-import git
+
 from werkzeug.utils import redirect
 
 from SensorData import CPU, RAM, GPU, Network
 import config
-import logging
 
 #log = logging.getLogger('werkzeug')
 #log.setLevel(logging.ERROR)
