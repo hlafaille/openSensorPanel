@@ -7,25 +7,10 @@ MAIN = dict(VERSION="rc-1",
             DEVELOPER="Hunter LaFaille",
             REFRESH_RATE="1",
             WINDOW_TITLE=CPU.name(),
+            MAIN_DRIVE="/dev/nvme0n1p2",
             )
 
-# UI CONFIGURATION
-BACKGROUND = dict(color="",
-                  )
-# UI ELEMENTS
-UI_TITLE = dict(enabled=True,
-                size="24",
-                text="My PC",
-                color="",
-                location="top.left",
-                )
-
-UI_CPU_TEMP = dict(enabled=True,
-              size="24",
-              color="",
-              location="top.left")
-
-UI_CPU_LOAD = dict(enabled=True,
-              size="24",
-              color="",
-              location="top.center")
+# NETWORK CONFIGURATION
+# !!! Time is handled in seconds.
+NETWORK = dict(SPEEDTEST_REFRESH = 10,
+               )
