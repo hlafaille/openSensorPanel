@@ -7,6 +7,7 @@ MAIN = dict(VERSION="rc-1",
             DEVELOPER="Hunter LaFaille",
             REFRESH_RATE="1",
             WINDOW_TITLE=CPU.name(),
+            NAVBAR_TITLE="openSensorPanel",
             MAIN_DRIVE="/dev/nvme0n1p2",
             )
 

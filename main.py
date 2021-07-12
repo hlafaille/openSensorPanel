@@ -1,17 +1,11 @@
 import os
-import webbrowser
-from datetime import datetime
 
-import psutil
-import speedtest
-from elevate import elevate
 from flask import Flask, render_template
-import git
+
 from werkzeug.utils import redirect
 
 from SensorData import CPU, RAM, GPU, Network
 import config
-import logging
 
 #log = logging.getLogger('werkzeug')
 #log.setLevel(logging.ERROR)
@@ -20,7 +14,7 @@ app = Flask(__name__)
 Net = Network.NetTest()
 @app.route("/")
 def index():
-    return render_template("index.html", windowTitle=config.MAIN['WINDOW_TITLE'], cpuModel=CPU.name())
+    return render_template("index.html", windowTitle=config.MAIN['WINDOW_TITLE'], cpuModel=CPU.name(), navbarTitle=config.MAIN['NAVBAR_TITLE'])
 
 
 @app.route('/cpuLoad')
